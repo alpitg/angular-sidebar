@@ -1,0 +1,15 @@
+<div class="page-wrapper base-theme" [ngClass]="{toggled: toggleFlag}">
+    <a id="show-sidebar" class="btn btn-sm btn-dark" href="javascript:void(0)" (click)="onSidebarToggleClicked()">
+        <i class="fas fa-bars"></i>
+    </a>
+
+    <app-sidebar></app-sidebar>
+
+    <main class="page-content">
+        <app-header></app-header>
+
+        <ng-content></ng-content>
+
+    </main>
+
+</div>
